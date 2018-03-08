@@ -1,0 +1,8 @@
+spring:
+    cloud:
+        config:
+            label: master
+            uri: http://localhost:9092
+            name: zuul-config,default
+
+# 需要注意的是 name : 后面的是是git 上面的文件名称

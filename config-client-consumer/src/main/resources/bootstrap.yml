@@ -1,0 +1,8 @@
+spring:
+    cloud:
+        config:
+            label: master
+            uri: http://localhost:9092
+            name: author,config-info,default
+
+# 需要注意的是， author 就是git 上配置的文件名称

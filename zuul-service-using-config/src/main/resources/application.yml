@@ -1,0 +1,15 @@
+spring:
+    application:
+        name: zuul-service
+server:
+  port: 9095
+
+zuul:
+  prefix: /api #为zuul设置一个公共的前缀
+  routes:
+    consumer:
+      path: /consumer/**
+      serviceId: eureka-client-consumer
+    configConsumer:
+      path: /configConsumer/**
+      serviceId: config-client-consumer

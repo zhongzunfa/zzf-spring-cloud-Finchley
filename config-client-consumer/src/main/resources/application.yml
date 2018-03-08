@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: config-client-consumer
+server:
+  port: 9093
+
